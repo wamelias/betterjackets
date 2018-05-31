@@ -44,3 +44,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'starter_generators', :git => 'https://github.com/raghubetina/starter_generators.git',  :branch => 'firstdraft'
 gem 'draft_generators', git: 'https://github.com/firstdraft/draft_generators.git', group: :development
+gem 'web_git', github: 'firstdraft/web_git'
