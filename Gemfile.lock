@@ -81,6 +81,9 @@ GEM
     arel (7.1.4)
     bcrypt (3.1.12)
     bindex (0.5.0)
+    bootstrap4-kaminari-views (1.0.0)
+      kaminari (>= 0.13)
+      rails (>= 3.1)
     builder (3.2.3)
     byebug (10.0.2)
     coffee-rails (4.2.2)
@@ -255,6 +258,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin (= 1.2.1)
+  bootstrap4-kaminari-views
   byebug
   coffee-rails (~> 4.2)
   devise
@@ -262,6 +266,7 @@ DEPENDENCIES
   font-awesome-sass (~> 4.5.0)
   jbuilder (~> 2.5)
   jquery-rails
+  kaminari
   listen (~> 3.0.5)
   pg (~> 0.18)
   puma (~> 3.0)
