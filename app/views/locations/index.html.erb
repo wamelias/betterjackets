@@ -18,7 +18,7 @@
       <% @locations.each do |location| %>
       <tr>
         <td><%= location.zipcode %></td>
-        <td><%= location.user_id %></td>
+        <td><%= location.users.email %></td>
         <td><%= location.nickname %></td>
         <td>
           <a href="/locations/<%= location.id %>" class="btn btn-primary">Show</a>
