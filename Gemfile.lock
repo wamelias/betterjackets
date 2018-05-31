@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/firstdraft/draft_generators.git
+  revision: f23e398fb64242b3e03b5890ce8e802a35177bc5
+  specs:
+    draft_generators (0.0.3)
+      devise
+
+GIT
   remote: https://github.com/raghubetina/starter_generators.git
   revision: 8127fb9dd6671cb4084316aebe411974a4507370
   branch: firstdraft
@@ -174,6 +181,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   devise
+  draft_generators!
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
