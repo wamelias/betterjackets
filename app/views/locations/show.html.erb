@@ -9,7 +9,13 @@
       <dd><%= @location.zipcode %></dd>
 
       <dt>User</dt>
-      <dd><%= @location.user_id %></dd>
+      <dd>
+        <% if @location.users.present? %>
+          <a href="/users/<%= @location.user_id %>">
+            <%= @location.users.email %>
+          </a>
+        <% end %>
+      </dd>
 
       <dt>Nickname</dt>
       <dd><%= @location.nickname %></dd>
