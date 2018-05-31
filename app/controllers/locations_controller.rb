@@ -1,4 +1,14 @@
 class LocationsController < ApplicationController
+  before_action :current_user_must_be_location_users, :only => [:edit, :update, :destroy]
+
+  def current_user_must_be_location_users
+    location = Location.find(params[:id])
+
+    unless current_user == location.users
+      redirect_to :back, :alert => "You are not authorized for that."
+    end
+  end
+
   def index
     @locations = Location.all
 

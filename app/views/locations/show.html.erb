@@ -20,12 +20,14 @@
       <a href="/locations" class="btn btn-primary">
         Back
       </a>
-      <a href="/locations/<%= @location.id %>/edit" class="btn btn-warning">
-        Edit
-      </a>
-      <a href="/delete_location/<%= @location.id %>" class="btn btn-danger" rel="nofollow">
-        Delete
-      </a>
+      <% if current_user == @location.users %>
+        <a href="/locations/<%= @location.id %>/edit" class="btn btn-warning">
+          Edit
+        </a>
+        <a href="/delete_location/<%= @location.id %>" class="btn btn-danger" rel="nofollow">
+          Delete
+        </a>
+      <% end %>
     </div>
   </div>
 </div>
