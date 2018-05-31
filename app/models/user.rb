@@ -1,6 +1,10 @@
 class User < ApplicationRecord
   # Direct associations
 
+  has_many   :addresses,
+             :class_name => "Location",
+             :dependent => :destroy
+
   # Indirect associations
 
   # Validations
